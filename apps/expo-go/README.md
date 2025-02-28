@@ -1,6 +1,6 @@
 # Bloom Go installation guide
 
-1. Recursively clonse the repo:  
+1. Recursively clone the repo:  
 
 ```sh
 git clone —recurse-submodules https://github.com/wpmed92/expo.git
