@@ -154,9 +154,6 @@
 		FC756CC924CB537400665AE6 /* EXScopedNotificationSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC756CC824CB537400665AE6 /* EXScopedNotificationSerializer.m */; };
 		FCA11CA724C1215B00C1FC54 /* EXScopedNotificationCategoriesModule.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA11CA524C1215B00C1FC54 /* EXScopedNotificationCategoriesModule.m */; };
 		FCB4079725C5EF4F00326AC8 /* EXScopedNotificationCategoryMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB4079625C5EF4F00326AC8 /* EXScopedNotificationCategoryMigrator.m */; };
-		FCB4099525C6207C00326AC8 /* EXScopedNotificationsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F7C02D246B09AE0060EE06 /* EXScopedNotificationsUtils.m */; };
-		FCF6D37025B34BC200808BF5 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF6D36F25B34BC200808BF5 /* NotificationService.swift */; };
-		FCF6D37425B34BC200808BF5 /* ExpoNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCF6D36D25B34BC200808BF5 /* ExpoNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,13 +171,6 @@
 			remoteGlobalIDString = 78CEE2BF1ACD07D70095B124;
 			remoteInfo = Exponent;
 		};
-		FCF6D37225B34BC200808BF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78CEE2B81ACD07D70095B124 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FCF6D36C25B34BC200808BF5;
-			remoteInfo = ExpoNotificationServiceExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -190,7 +180,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FCF6D37425B34BC200808BF5 /* ExpoNotificationServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +471,6 @@
 		FCB4079525C5EF3800326AC8 /* EXScopedNotificationCategoryMigrator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXScopedNotificationCategoryMigrator.h; sourceTree = "<group>"; };
 		FCB4079625C5EF4F00326AC8 /* EXScopedNotificationCategoryMigrator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXScopedNotificationCategoryMigrator.m; sourceTree = "<group>"; };
 		FCB407C525C61D4700326AC8 /* ExpoNotificationServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpoNotificationServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
-		FCF6D36D25B34BC200808BF5 /* ExpoNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExpoNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF6D36F25B34BC200808BF5 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		FCF6D37125B34BC200808BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -510,13 +498,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C3B781E40BA87F7702303B /* libPods-ExponentIntegrationTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCF6D36A25B34BC200808BF5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +639,6 @@
 				78CEE2C01ACD07D70095B124 /* Expo Go.app */,
 				B51333401CE649FE00E9FC9E /* ExponentIntegrationTests.xctest */,
 				B505BA0E20CAF77A0046ACFB /* Tests.xctest */,
-				FCF6D36D25B34BC200808BF5 /* ExpoNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1225,7 +1205,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FCF6D37325B34BC200808BF5 /* PBXTargetDependency */,
 			);
 			name = "Expo Go";
 			productName = Exponent;
@@ -1274,23 +1253,6 @@
 			productReference = B51333401CE649FE00E9FC9E /* ExponentIntegrationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FCF6D36C25B34BC200808BF5 /* ExpoNotificationServiceExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FCF6D37825B34BC200808BF5 /* Build configuration list for PBXNativeTarget "ExpoNotificationServiceExtension" */;
-			buildPhases = (
-				FCF6D36925B34BC200808BF5 /* Sources */,
-				FCF6D36A25B34BC200808BF5 /* Frameworks */,
-				FCF6D36B25B34BC200808BF5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ExpoNotificationServiceExtension;
-			productName = ExpoNotificationServiceExtension;
-			productReference = FCF6D36D25B34BC200808BF5 /* ExpoNotificationServiceExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1304,7 +1266,6 @@
 				TargetAttributes = {
 					78CEE2BF1ACD07D70095B124 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = C8D8QTF339;
 						LastSwiftMigration = 1150;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1330,19 +1291,12 @@
 					};
 					B505BA0D20CAF77A0046ACFB = {
 						CreatedOnToolsVersion = 9.4;
-						DevelopmentTeam = C8D8QTF339;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 78CEE2BF1ACD07D70095B124;
 					};
 					B513333F1CE649FE00E9FC9E = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 78CEE2BF1ACD07D70095B124;
-					};
-					FCF6D36C25B34BC200808BF5 = {
-						CreatedOnToolsVersion = 12.2;
-						DevelopmentTeam = C8D8QTF339;
-						LastSwiftMigration = 1220;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1363,7 +1317,6 @@
 				78CEE2BF1ACD07D70095B124 /* Expo Go */,
 				B513333F1CE649FE00E9FC9E /* ExponentIntegrationTests */,
 				B505BA0D20CAF77A0046ACFB /* Tests */,
-				FCF6D36C25B34BC200808BF5 /* ExpoNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -1401,13 +1354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59B59491F6369480083850D /* EXTestEnvironment.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCF6D36B25B34BC200808BF5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1979,15 +1925,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCF6D36925B34BC200808BF5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FCF6D37025B34BC200808BF5 /* NotificationService.swift in Sources */,
-				FCB4099525C6207C00326AC8 /* EXScopedNotificationsUtils.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2000,11 +1937,6 @@
 			isa = PBXTargetDependency;
 			target = 78CEE2BF1ACD07D70095B124 /* Expo Go */;
 			targetProxy = B51333451CE649FE00E9FC9E /* PBXContainerItemProxy */;
-		};
-		FCF6D37325B34BC200808BF5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FCF6D36C25B34BC200808BF5 /* ExpoNotificationServiceExtension */;
-			targetProxy = FCF6D37225B34BC200808BF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2170,7 +2102,7 @@
 				CODE_SIGN_ENTITLEMENTS = Exponent/Supporting/Exponent.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8D8QTF339;
+				DEVELOPMENT_TEAM = UDUCCCVUWB;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				EX_BUNDLE_NAME = Expo;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2212,7 +2144,7 @@
 					"-no_objc_category_merging",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\" -D DEBUG -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent;
+				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent1234;
 				PRODUCT_NAME = "Expo Go";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_STYLE = "non-global";
@@ -2281,7 +2213,7 @@
 					"-no_objc_category_merging",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\" -D RELEASE -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent;
+				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent1234;
 				PRODUCT_NAME = "Expo Go";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore host.exp.Exponent";
 				STRIP_STYLE = "non-global";
@@ -2311,7 +2243,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = C8D8QTF339;
+				DEVELOPMENT_TEAM = UDUCCCVUWB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2343,7 +2275,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = C8D8QTF339;
+				DEVELOPMENT_TEAM = UDUCCCVUWB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -2368,6 +2300,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UDUCCCVUWB;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExponentIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -2391,6 +2324,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UDUCCCVUWB;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExponentIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -2403,86 +2337,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = host.exp.ExponentIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expo Go.app/Exponent";
-			};
-			name = Release;
-		};
-		FCF6D37625B34BC200808BF5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = C8D8QTF339;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExpoNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent.ExpoNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "ExpoNotificationServiceExtension/ExpoNotificationServiceExtension-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FCF6D37725B34BC200808BF5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = C8D8QTF339;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = ExpoNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = host.exp.Exponent.ExpoNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore host.exp.Exponent.ExpoNotificationServiceExtension";
-				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = "ExpoNotificationServiceExtension/ExpoNotificationServiceExtension-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2521,15 +2375,6 @@
 			buildConfigurations = (
 				B51333471CE649FE00E9FC9E /* Debug */,
 				B51333481CE649FE00E9FC9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FCF6D37825B34BC200808BF5 /* Build configuration list for PBXNativeTarget "ExpoNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FCF6D37625B34BC200808BF5 /* Debug */,
-				FCF6D37725B34BC200808BF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,7 @@ export function DevelopmentServersHeader({ onHelpPress }: DevelopmentServersHead
           size="small"
           style={{ marginRight: spacing[2] }}
           type="InterSemiBold">
-          Development servers
+          Bloom Development servers
         </Heading>
       </Row>
       <TouchableOpacity onPress={onHelpPress}>

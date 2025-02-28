@@ -37,6 +37,7 @@
         "projectId": "e3ec11de-308d-48c3-9f4c-c07d90733495"
       }
     },
+    "newArchEnabled": true,
     "runtimeVersion": "52.0.0"
   }
 }
